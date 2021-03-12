@@ -1,0 +1,54 @@
+{
+  "Email": {
+    "MailAction": {
+      "Question": "Please provide your satisfaction score below to help us improve the level of service."
+    },
+    "opening": "Hello,",
+    "focus": "Your Service Ticket #12526 regarding \"Testing Ticket\" has been completed by our help desk staff.<br>If you feel this ticket is not complete, please reply to this email or contact the help desk for further assistance.",
+    "closing": "Please submit additional requests in a separate ticket.<br>Regards,<br>Managed Services Department<br> "
+  },
+  "QuestionPage": {
+    "Questions": [
+      {
+        "options": [],
+        "_id": "598af51c274de00b052d505e",
+        "category": "Recommendation",
+        "active": true,
+        "type": "Selection box",
+        "question": "How much do you like us to recommend to other companies?",
+        "heading": "Recommendation",
+        "uuid": "ac4216f5-2285-44a2-b0eb-34600382030d"
+      },
+      {
+        "options": [],
+        "_id": "59b17bcb22b5191ed2094516",
+        "category": "Promptness",
+        "active": true,
+        "type": "Selection box",
+        "question": "How happy are you with the speed at which we provide support to you?",
+        "heading": "Promptness",
+        "uuid": "a95e2ba7-042d-44ef-94e6-f8c43f62d98b"
+      },
+      {
+        "options": [],
+        "_id": "59b17be972b5191ed2094517",
+        "category": "Accuracy",
+        "active": true,
+        "type": "Selection box",
+        "question": "How satisfied are you with our attention to detail?",
+        "heading": "Accuracy",
+        "uuid": "5c923685-cee1-47bd-b2e3-8cd96918c59c"
+      }
+    ],
+    "heading": "Thanks for providing your valuable feedback",
+    "description": "Client satisfaction is very important to us and we greatly appreciate your feedback in this area. Please tell us what we need to work on. Your response will be used to improve the quality of our services",
+    "footer": "© Copyright 2020"
+  },
+  "ThankyouPage": {
+    "Description": "If you would really \"go out of your way\" to recommend us we would love to get a testimonial from you and have you share this with your colleagues."
+  },
+  "syncFlag": false,
+  "type": "ticket",
+  "name": "#(surveyName)",
+  "EmailSnippet": {}
+}

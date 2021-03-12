@@ -1,0 +1,8 @@
+{
+  "heading": "#(questionName)",
+  "question": "#(questionDescription)",
+  "category": "Promptness",
+  "type": "Selection box",
+  "options": [],
+  "active": false
+}

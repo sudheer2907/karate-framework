@@ -1,0 +1,27 @@
+#!/bin/bash
+
+readonly SAMPLE_BRANCH_NAME="sample"
+
+checkout_and_delete_branch() {
+	git checkout $1
+	git branch -D $SAMPLE_BRANCH_NAME
+}
+
+#----------------------
+# ENTRY POINT
+#----------------------
+branch="$(git rev-parse --abbrev-ref HEAD)"
+echo Working on branch $branch
+git checkout -b $SAMPLE_BRANCH_NAME origin/$branch && git pull
+git merge $branch
+mvn clean test-compile -s settings.xml -Dcheckstyle.check.skip=false -Dpmd.check.skip=false -Dfindbugs.check.skip=false
+if [ $? -eq 0 ]
+then
+ echo "Successful Compilation Pushing"
+ checkout_and_delete_branch $branch
+ exit 0
+else
+ echo "Compilation failed!! Code cant be pushed"
+ checkout_and_delete_branch $branch
+ exit 1
+fi

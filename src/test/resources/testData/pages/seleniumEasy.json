@@ -1,0 +1,46 @@
+{
+	"SeleniumEasy": {
+		"homePage": {
+			"seleniumEasyLableText": "//a[contains(text(),'Selenium Easy')]",
+			"seleniumEasySiteSlogan": "//div[@id='site-slogan']",
+			"popUpNoThanks":"//a[contains(text(),'No, thanks!')]"
+		},
+		"inputForms": {
+			"tabInputForms": "//a[contains(text(),'Input Forms')]",
+			"subTabSimpleFormDemo": "//a[contains(text(),'Simple Form Demo')]",
+			"subTabCheckBoxDemo": "//a[contains(text(),'Checkbox Demo')]",
+			"subTabRadioButtonDemo": "//ul[@class='dropdown-menu']/li/a[contains(text(),'Radio Buttons Demo')]",
+			"subTabSelectDropDownList": "//a[contains(text(),'//a[contains(text(),'Select Dropdown List')]')]",
+			"subTabInputFormSubmit": "//a[contains(text(),'//a[contains(text(),'Input Form Submit')]')]",
+			"subTabAjaxFormSubmit": "//a[contains(text(),'//a[contains(text(),'Ajax Form Submit')]')]",
+			"subTabJQuerySelectDropDown": "//a[contains(text(),'//a[contains(text(),'JQuery Select dropdown')]')]"
+		},
+		"simpleFormDemo": {
+			"simpleFormDemoHomePage": "//h3[contains(text(),'This would be your first example to start with Sel')]",
+			"txtBoxSingleInput":"//input[@id='user-message']",
+			"txtBoxEnterA":"//input[@id='sum1']",
+			"txtBoxEnterB":"//input[@id='sum2']",
+			"btnShowMessage":"//button[contains(text(),'Show Message')]",
+			"btnGetTotal":"//button[contains(text(),'Get Total')]",
+			"lableYourMessageSingleInput":"//span[@id='display']",
+			"lableTextGetTotalValue":"//span[@id='displayvalue']"
+		},
+		"checkboxDemo":{
+		"checkboxDemoHomePage":"//h3[contains(text(),'checkbox')]",
+		"chkBoxClickOnThisCheckbox":"//input[@id='isAgeSelected']",
+		"lableTextAfterClickingSingleChkBox":"//div[@id='txtAge']",
+		"chkboxOption1":"//div[contains(text(),'Multiple Checkbox Demo')]/following-sibling::div/div[1]/label/input",
+		"chkboxOption2":"//div[contains(text(),'Multiple Checkbox Demo')]/following-sibling::div/div[2]/label/input",
+		"chkboxOption3":"//div[contains(text(),'Multiple Checkbox Demo')]/following-sibling::div/div[3]/label/input",
+		"chkboxOption4":"//div[contains(text(),'Multiple Checkbox Demo')]/following-sibling::div/div[4]/label/input"
+		},
+		"radioButtonDemo":{
+		"singleMaleRadioButton":"//div[@class='panel-body']/label[@class='radio-inline']/input[@value='Male']",
+		"singleFemaleRadioButton":"//div[@class='panel-body']/label[@class='radio-inline']/input[@value='Female']",
+		"btnGetCheckedValues":"//button[@id='buttoncheck']",
+		"labelTextRadioIsChecked":"//p[contains(text(),'checked')]"
+		}
+	},
+	"frequency": 20,
+	"time_ms": 8000
+}

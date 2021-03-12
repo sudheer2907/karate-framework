@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+   <profiles>
+      <profile>
+         <id>repository</id>
+        <!--  <repositories>
+            <repository>
+               <snapshots>
+                  <enabled>false</enabled>
+               </snapshots>
+               <id>comcentral</id>
+               <name>libs-release</name>
+               <url></url>
+            </repository>
+            <repository>
+               <snapshots />
+               <id>snapshots</id>
+               <name>libs-snapshot</name>
+               <url></url>
+            </repository>
+         </repositories> -->
+      </profile>
+   </profiles>
+   <activeProfiles>
+      <activeProfile>repository</activeProfile>
+   </activeProfiles>
+</settings>
