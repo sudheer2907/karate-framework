@@ -24,7 +24,6 @@ Scenario: Test Simple form demo - Two Input Field
     And waitforinput(frequency, time_ms, SeleniumEasy.simpleFormDemo.txtBoxEnterB,20) 
     When waitforclick(frequency, time_ms, SeleniumEasy.simpleFormDemo.btnGetTotal) 
     Then waituntiltextmatch(frequency, time_ms,SeleniumEasy.simpleFormDemo.lableTextGetTotalValue,'30') 
-    #Then match text(SeleniumEasy.simpleFormDemo.lableTextGetTotalValue) contains '30'
     
 Scenario: Test Simple form demo - Checkbox demo 
     Given waitforclick(frequency, time_ms, SeleniumEasy.inputForms.tabInputForms) 

@@ -14,7 +14,7 @@ Background:
     
     @name=NavigateToSeleniumEasyURL 
     Scenario: Navigate to SeleniumEasy URL 
-    Given  driver environment.seleniumEasyBaseUrl 
+    Given  driver environment.SeleniumEasy.seleniumEasyBaseUrl 
     And  driver.waitUntil("document.readyState == 'complete'") 
     And  maximize() 
     Then  waitforclick(frequency, time_ms, SeleniumEasy.homePage.popUpNoThanks)

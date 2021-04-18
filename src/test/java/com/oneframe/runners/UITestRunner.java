@@ -32,12 +32,12 @@ class UITestRunner {
    * @param karateOutputPath - directory where you want to keep report of test case executions.
    * @author sudheer.singh
    */
-  private static void generateReport(String karateOutputPath) {
+  public static void generateReport(String karateOutputPath) {
     Collection<File> jsonFiles =
         FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
-    List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
+    List<String> jsonPaths = new ArrayList<String>(jsonFiles.size());
     jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-    Configuration config = new Configuration(new File("target"), "demo");
+    Configuration config = new Configuration(new File("target"), "ReqRes.in SampleAPI Testing");
     ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
     reportBuilder.generateReports();
   }

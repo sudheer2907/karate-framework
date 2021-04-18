@@ -1,9 +1,3 @@
 {
-    "AgentService": {
-        "ApiURL": "https://integration.agent.exec.itsupport247.net",
-        "ApiURLBACKUP": "https://integration.agent.service.itsupport247.net",
-        "ApiPort": 443,
-        "ApiBasePath": "agent",
-        "ApiVersion": "v1"
-    }
+    "seleniumEasyBaseUrl": "https://www.seleniumeasy.com/test/"
 }
