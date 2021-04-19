@@ -15,21 +15,22 @@ import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
-public final class APIRunner {
+public final class ReqResAPIRunner {
 
   /**
    * Constructor is private, it is just to limit object creation and to make this runner class
    * immutable.
    */
-  private APIRunner() {}
+  private ReqResAPIRunner() {}
 
   /**
    * Use this method if you want to execute any specific feature file.
    */
   public void runOneFeatureFile() {
     System.setProperty("karate.env", "qa");
-    Results results = Runner.path("classpath:features/apitests/testFeatures/TestReqResPost.feature")
-        .tags("~@Ignore").parallel(2);
+    Results results =
+        Runner.path("classpath:features/apitests/reqres/testFeatures/TestReqResPost.feature")
+            .tags("~@Ignore").parallel(2);
     Assertions.assertEquals(0, results.getFailCount());
     generateReport(results.getReportDir());
   }
@@ -41,7 +42,7 @@ public final class APIRunner {
   public void runMultipleFeatureFiles() {
     System.setProperty("karate.env", "qa");
     Results results = Runner.builder().outputCucumberJson(true)
-        .path("classpath:features/apitests/testFeatures").tags("~@Ignore").parallel(2);
+        .path("classpath:features/apitests/reqres/testFeatures").tags("~@Ignore").parallel(2);
     Assertions.assertEquals(0, results.getFailCount());
     generateReport(results.getReportDir());
   }

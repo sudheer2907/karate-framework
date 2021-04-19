@@ -1,7 +1,7 @@
 Feature: Feedback actions API feature 
 
 Scenario: Create User and verify details of created user
-   Given call read('classpath:features/apitests/testHelper/TestReqResPostHelper.feature@name=CreateUser')
+   Given call read('classpath:features/apitests/reqres/testHelper/ReqResPostHelper.feature@name=CreateUser')
    Then match response contains {"createdAt":'#notnull',"name":'morpheus',"job":'leader',"id":'#notnull'}
 
 Scenario Outline: Update user and verify user details.
@@ -23,9 +23,9 @@ Scenario Outline: Update user and verify user details.
     |           |tester   |200                |{"updatedAt":'#notnull',"name":'',"job":'tester'}       |
 
 Scenario: Register Successful
-Given call read('classpath:features/apitests/testHelper/TestReqResPostHelper.feature@name=RegisterSuccessful')
+Given call read('classpath:features/apitests/reqres/testHelper/ReqResPostHelper.feature@name=RegisterSuccessful')
 Then match response contains {"id":'#notnull',"token":'#notnull'}
 
 Scenario: Register unsuccessful
-Given call read('classpath:features/apitests/testHelper/TestReqResPostHelper.feature@name=RegisterUnsuccessful')
+Given call read('classpath:features/apitests/reqres/testHelper/ReqResPostHelper.feature@name=RegisterUnsuccessful')
 Then match response contains {"error": "Missing password"}

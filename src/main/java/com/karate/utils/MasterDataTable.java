@@ -1,4 +1,4 @@
-package com.oneframe.utils;
+package com.karate.utils;
 
 import java.util.logging.Logger;
 
