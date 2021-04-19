@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>target/karate.log</file>
+    <encoder>
+      <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!--'additivity' flag is important! Without it logback will double-log log messages-->
+  <logger name="binary_data_logger" level="TRACE" additivity="false">
+    <appender-ref ref="RP"/>
+  </logger>
+
+  <logger name="com.intuit.karate" level="DEBUG"/>
+
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
+  </root>
+
+</configuration>

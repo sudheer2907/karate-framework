@@ -28,8 +28,8 @@ public final class APIRunner {
    */
   public void runOneFeatureFile() {
     System.setProperty("karate.env", "qa");
-    Results results =
-        Runner.path("classpath:features/apitests/testFeatures/TestReqResPost.feature").parallel(2);
+    Results results = Runner.path("classpath:features/apitests/testFeatures/TestReqResPost.feature")
+        .tags("~@Ignore").parallel(2);
     Assertions.assertEquals(0, results.getFailCount());
     generateReport(results.getReportDir());
   }
@@ -40,7 +40,8 @@ public final class APIRunner {
   @Test
   public void runMultipleFeatureFiles() {
     System.setProperty("karate.env", "qa");
-    Results results = Runner.path("classpath:features/apitests/testFeatures").parallel(2);
+    Results results = Runner.builder().outputCucumberJson(true)
+        .path("classpath:features/apitests/testFeatures").tags("~@Ignore").parallel(2);
     Assertions.assertEquals(0, results.getFailCount());
     generateReport(results.getReportDir());
   }
