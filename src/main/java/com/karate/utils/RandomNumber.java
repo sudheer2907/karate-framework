@@ -1,4 +1,4 @@
-package com.karate.utils;
+package main.java.com.karate.utils;
 
 import java.util.Random;
 

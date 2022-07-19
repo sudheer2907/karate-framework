@@ -1,3 +1,11 @@
 {
-    "seleniumEasyBaseUrl": "https://www.seleniumeasy.com/test/"
+  "SeleniumEasy": {
+    "seleniumEasyBaseUrl": "https://demo.seleniumeasy.com/"
+  },
+  "ReqRes": {
+    "reqResBaseUrl": "https://reqres.in/"
+  },
+  "DummyRestApiExample": {
+  "dummyRestApiExampleBaseUrl" :"http://dummy.restapiexample.com"
+  }
 }

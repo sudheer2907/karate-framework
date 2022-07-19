@@ -1,6 +1,6 @@
 {
   "SeleniumEasy": {
-    "seleniumEasyBaseUrl": "https://www.seleniumeasy.com/test/"
+    "seleniumEasyBaseUrl": "https://demo.seleniumeasy.com/"
   },
   "ReqRes": {
     "reqResBaseUrl": "https://reqres.in/"
