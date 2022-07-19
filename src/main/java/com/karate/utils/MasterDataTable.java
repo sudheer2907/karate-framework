@@ -1,4 +1,4 @@
-package main.java.com.karate.utils;
+package com.karate.utils;
 
 import java.util.logging.Logger;
 
